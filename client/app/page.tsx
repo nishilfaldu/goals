@@ -1,5 +1,6 @@
 "use client"
 import { NavigationMenuDemo } from '@/components/NavigationMenuDemo'
+import { TabsDemo } from '@/components/TabsDemo'
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
     alt="banner"
     className="object-cover max-h-96 w-full"
     />
+        <div>
+            <TabsDemo/>
+        </div>
     </div>
     </>
   )
