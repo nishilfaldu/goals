@@ -7,7 +7,7 @@
     "contributors": [
         "Nishil Faldu <faldund@outlook.com>"
     ],
-    "repository": "",
+    "repository": "https://github.com/nishilfaldu/goals.git",
     "scripts": {
         "dev": "keystone dev",
         "start": "keystone start",

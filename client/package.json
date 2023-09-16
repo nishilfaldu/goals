@@ -13,7 +13,7 @@
         "npm": "please-use-yarn"
     },
     "license": "UNLICENSED",
-    "repository": "",
+    "repository": "https://github.com/nishilfaldu/goals.git",
     "scripts": {
         "dev": "yarn generate && next dev",
         "compile": "yarn generate && tsc -p . --pretty",
