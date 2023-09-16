@@ -1,29 +1,17 @@
-# Eventure
+# Goals
 
-Eventure is an event planning application
+Goals is an goal management application
 
 ## Team Name
 
-Eventure
+Goals
 
 ## Team Members
 
-1. Anusha Chitranshi
-
-- Computer Science
-- chitraaa@mail.uc.edu
-
 2. Nishil Faldu
 
-- Computer Science
-- faldund@mail.uc.edu
-
-## Faculty Advisor
-
-1. Dr. Jillian Aurisano
-
-- Associate Professor
-- aurisajm@ucmail.uc.edu
+-   Computer Science
+-   faldund@mail.uc.edu
 
 ## Project Topic Area
 
