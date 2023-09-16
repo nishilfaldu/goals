@@ -1,14 +1,20 @@
-import type { NextPage } from "next";
+"use client"
+import { NavigationMenuDemo } from '@/components/NavigationMenuDemo'
 
-
-
-const HomePage: NextPage = () => {
-  return(
-    <div className="max-w-[2520px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4">
-     Welcome to Goals - A Goal Management Application!
-
+export default function Home() {
+  return (
+    <>
+    <div className="flex justify-center py-4 border-b-2">
+       <NavigationMenuDemo/>
     </div>
-  );
-};
-
-export default HomePage;
+    <div className="">
+    {/* eslint-disable-next-line @next/next/no-img-element*/}
+    <img
+    src="https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release.png"
+    alt="banner"
+    className="object-cover max-h-96 w-full"
+    />
+    </div>
+    </>
+  )
+}
