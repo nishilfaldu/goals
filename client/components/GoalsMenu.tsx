@@ -15,6 +15,7 @@ import {
 
 import { Goal } from "../data/goal"
 import { playlists } from "@/data/playlists"
+import Link from "next/link"
 
 interface GoalsMenuProps extends React.HTMLAttributes<HTMLDivElement> {
   album: Goal
@@ -34,20 +35,22 @@ export function GoalsMenu({
   return (
     <div className={cn("space-y-3", className)} {...props}>
       <ContextMenu>
-        <ContextMenuTrigger>
+        {/* <ContextMenuTrigger> */}
           <div className="overflow-hidden rounded-md">
-            <Image
-              src={album.cover}
-              alt={album.name}
-              width={width}
-              height={height}
-              className={cn(
-                "h-auto w-auto object-cover transition-all hover:scale-105",
-                aspectRatio === "portrait" ? "aspect-[3/4]" : "aspect-square"
-              )}
-            />
+            <Link href={`/${album.type}/${album.name}`}>
+                <Image
+                src={album.cover}
+                alt={album.name}
+                width={width}
+                height={height}
+                className={cn(
+                    "h-auto w-auto object-cover transition-all hover:scale-105",
+                    aspectRatio === "portrait" ? "aspect-[3/4]" : "aspect-square"
+                )}
+                />
+            </Link>
           </div>
-        </ContextMenuTrigger>
+        {/* </ContextMenuTrigger>
         <ContextMenuContent className="w-40">
           <ContextMenuItem>Add to Library</ContextMenuItem>
           <ContextMenuSub>
@@ -84,7 +87,7 @@ export function GoalsMenu({
           <ContextMenuSeparator />
           <ContextMenuItem>Like</ContextMenuItem>
           <ContextMenuItem>Share</ContextMenuItem>
-        </ContextMenuContent>
+        </ContextMenuContent> */}
       </ContextMenu>
       <div className="space-y-1 text-sm">
         <h3 className="font-medium leading-none">{album.name}</h3>

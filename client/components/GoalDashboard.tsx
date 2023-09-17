@@ -13,8 +13,7 @@ import {
 } from "@/components/ui/tabs"
 
 import { GoalsMenu } from "./GoalsMenu"
-// import { Menu } from "./components/menu"
-import { currentGoals, futureGoals } from "../data/goal"
+import { currentGoals } from "../data/goal"
 import { playlists } from "../data/playlists"
 
 export const metadata: Metadata = {
@@ -84,7 +83,7 @@ export default function GoalDashboard() {
                       <div className="relative">
                         <ScrollArea>
                           <div className="flex space-x-4 pb-4">
-                            {currentGoals.map((album) => (
+                            {currentGoals.map((album) => (album.type === "relationship" &&
                               <GoalsMenu
                                 key={album.name}
                                 album={album}
@@ -154,7 +153,7 @@ export default function GoalDashboard() {
                       <div className="relative">
                         <ScrollArea>
                           <div className="flex space-x-4 pb-4">
-                            {currentGoals.map((album) => (
+                            {currentGoals.map((album) => (album.type === "health" &&
                               <GoalsMenu
                                 key={album.name}
                                 album={album}
@@ -187,7 +186,7 @@ export default function GoalDashboard() {
                       <div className="relative">
                         <ScrollArea>
                           <div className="flex space-x-4 pb-4">
-                            {currentGoals.map((album) => (
+                            {currentGoals.map((album) => (album.type === "financial" &&
                               <GoalsMenu
                                 key={album.name}
                                 album={album}
