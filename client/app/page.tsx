@@ -1,4 +1,6 @@
 "use client"
+import GoalDashboard from '@/components/GoalDashboard'
+import { GoalsMenu } from '@/components/GoalsMenu'
 import { NavigationMenuDemo } from '@/components/NavigationMenuDemo'
 import { TabsDemo } from '@/components/TabsDemo'
 
@@ -15,8 +17,10 @@ export default function Home() {
     alt="banner"
     className="object-cover max-h-96 w-full"
     />
-        <div>
-            <TabsDemo/>
+        <div className="justify-center items-center">
+            {/* <TabsDemo/> */}
+            {/* <GoalsMenu /> */}
+            <GoalDashboard/>
         </div>
     </div>
     </>
